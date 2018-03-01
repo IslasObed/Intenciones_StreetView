@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alumno.intenciones.MainActivity">
+
+     <Button
+         android:id="@+id/buttonNavegador"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginEnd="8dp"
+         android:layout_marginStart="8dp"
+         android:layout_marginTop="52dp"
+         android:onClick="abrirPaginaWeb"
+         android:text="Abrir página Web"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+
+     <Button
+         android:id="@+id/buttonLlamada"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/buttonNavegador"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="44dp"
+         android:onClick="llamadaTelefono"
+         android:text="Realizar llamada"
+         app:layout_constraintStart_toStartOf="@+id/buttonNavegador"
+         app:layout_constraintTop_toBottomOf="@+id/buttonNavegador" />
+
+     <Button
+         android:id="@+id/buttonMaps"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/buttonLlamada"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="36dp"
+         android:onClick="googleMaps"
+         android:text="Abrir Google Maps"
+         app:layout_constraintStart_toStartOf="@+id/buttonLlamada"
+         app:layout_constraintTop_toBottomOf="@+id/buttonLlamada" />
+
+     <Button
+         android:id="@+id/buttonFoto"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/buttonMaps"
+         android:layout_centerHorizontal="true"
+         android:layout_marginStart="8dp"
+         android:layout_marginTop="28dp"
+         android:onClick="tomarFoto"
+         android:text="Tomar Foto"
+         app:layout_constraintStart_toStartOf="@+id/buttonEmail"
+         app:layout_constraintTop_toBottomOf="@+id/buttonEmail" />
+
+     <Button
+         android:id="@+id/buttonEmail"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/buttonFoto"
+         android:layout_centerHorizontal="true"
+         android:layout_marginStart="8dp"
+         android:layout_marginTop="48dp"
+         android:onClick="mandarCorreo"
+         android:text="Mandar E-mail"
+         app:layout_constraintStart_toStartOf="@+id/buttonMaps"
+         app:layout_constraintTop_toBottomOf="@+id/buttonMaps" />
+
+</android.support.constraint.ConstraintLayout>
